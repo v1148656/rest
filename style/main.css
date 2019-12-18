@@ -177,8 +177,5 @@
 .about .aboutrow .text p {
   width: 80%;
   font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
