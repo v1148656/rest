@@ -20,12 +20,12 @@
   left: 0;
 }
 
-.row {
+.rootrow {
   height: 80px;
   z-index: 2;
 }
 
-.row div {
+.rootrow div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,11 +37,11 @@
           justify-content: center;
 }
 
-.row div img {
+.rootrow div img {
   cursor: pointer;
 }
 
-.row div ul {
+.rootrow div ul {
   margin: 0;
   height: auto;
   -webkit-box-pack: center;
@@ -53,11 +53,11 @@
   display: flex;
 }
 
-.row div ul #home {
+.rootrow div ul #home {
   color: green;
 }
 
-.row div ul li {
+.rootrow div ul li {
   position: relative;
   margin: 5%;
   cursor: pointer;
@@ -65,11 +65,11 @@
   text-shadow: 1px 1px 2px brown;
 }
 
-.row div ul li:hover {
+.rootrow div ul li:hover {
   color: green;
 }
 
-.row #btn {
+.rootrow #btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +85,7 @@
   padding: 7px 30px 7px 30px;
 }
 
-.row #btn:hover {
+.rootrow #btn:hover {
   background-color: black;
   color: white;
 }
@@ -129,5 +129,53 @@
   margin-left: auto;
   margin-right: auto;
   text-shadow: 2px 2px 3px black;
+}
+
+.about {
+  background-color: #ebebeb;
+}
+
+.about .aboutrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+}
+
+.about .aboutrow .pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.about .aboutrow .pictures .woman {
+  position: absolute;
+  bottom: 0;
+}
+
+.about .aboutrow .text {
+  width: 50%;
+}
+
+.about .aboutrow .text * {
+  margin: 2%;
+}
+
+.about .aboutrow .text p {
+  width: 80%;
+  font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */
