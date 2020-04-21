@@ -1,49 +1,77 @@
-#first
-    height: 930px
-    background-image: url('../images/2.jpg')
-    background-size: cover
-    z-index: 1
-    position: relative
-.root
-    position: sticky
-    background-color: rgba (0, 0, 0, 0.3)
-    top: 0
-    left: 0
+#transform
+    overflow: hidden
+    #first
+        margin-left: -30px
+        width: 115%
+        animation: fairytale 15s linear infinite forwards
+        height: 930px
+        background-image: url('../images/2.jpg')
+        background-size: cover
+        background-repeat: around
+        z-index: 1
+        // position: relative
+        .root
+            position: fixed
+            background-color: rgba(0, 0, 0, 0.8)
+            top: 0
+            left: 0
+            .rootrow
+                height: 80px
+                z-index: 2
+                div
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin-left: -10%
+                    img
+                        cursor: pointer
+                        margin-left: 50%
+                    ul
+                        margin: 0
+                        height: auto
+                        justify-content: center
+                        list-style-type: none
+                        display: flex
+                        #home
+                            color: green
+                        li
+                            position: relative
+                            margin: 5%
+                            cursor: pointer
+                            color: white
+                            text-shadow: 1px 1px 2px brown
+                        li:hover
+                            color: green
+                    #btn
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        position: relative
+                        background-color: white
+                        cursor: pointer
+                        padding: 7px 30px 7px 30px
+                    #btn:hover
+                        background-color: black
+                        color: white
 
-.rootrow
-    height: 80px
-    z-index: 2
-    div
-        display: flex
-        align-items: center
-        justify-content: center
-        img
-            cursor: pointer
-        ul
-            margin: 0
-            height: auto
-            justify-content: center
-            list-style-type: none
-            display: flex
-            #home
-                color: green
-            li
-                position: relative
-                margin: 5%
-                cursor: pointer
-                color: white
-                text-shadow: 1px 1px 2px brown
+@keyframes fairytale
 
-            li:hover
-                color: green
-    #btn
-        display: flex
-        justify-content: center
-        align-items: center
-        position: relative
-        background-color: white
-        cursor: pointer
-        padding: 7px 30px 7px 30px
-    #btn:hover
-        background-color: black
-        color: white
+    25%
+        transform: matrix(1.1)
+        transform: scaleX(1.03)
+        transform: rotate(-0.5deg)
+
+    50%
+        transform: matrix(1)
+        transform: scaleX(1.06)
+        transform: rotate(0deg)
+
+    75%
+        transform: matrix(0.9)
+        transform: scaleX(1.03)
+        transform: rotate(0.5deg)
+
+    100%
+        transform: matrix(1)
+        transform: scaleX(1)
+        transform: rotate(0deg)
